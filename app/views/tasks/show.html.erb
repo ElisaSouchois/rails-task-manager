@@ -1,0 +1,6 @@
+<h1> <%= @task.title %> </h1>
+<div class = details> <%= @task.details %> </div>
+<div class = done?>
+  <p><%=  @task.completed ? 'This task is completed': 'This task is not completed'%></p>
+</div>
+<p><%= link_to "return", tasks_path(@task) %>  </p>
